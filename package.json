@@ -1,6 +1,6 @@
 {
   "name": "rawgraphs-frontend",
-  "homepage": "https://app.rawgraphs.io",
+  "homepage": "https://kirokir.github.io/data-visualizer",
   "version": "2.0.1",
   "private": true,
   "dependencies": {
@@ -43,9 +43,11 @@
   "scripts": {
     "format": "prettier --write src",
     "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts build",
+    "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -63,6 +65,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "prettier": "^2.1.2",
     "sass": "^1.63.6"
   }
