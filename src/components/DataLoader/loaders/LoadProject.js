@@ -33,7 +33,7 @@ export default function LoadProject({ onProjectSelected, setLoadingError }) {
     isDragAccept,
   } = useDropzone({
     onDrop,
-    accept: '.rawgraphs',
+    accept: '.graphon', // <-- Changed file extension
     maxFiles: 1,
   })
   return (

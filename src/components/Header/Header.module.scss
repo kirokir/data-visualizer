@@ -2,4 +2,10 @@
   border-top: 4px solid var(--primary);
   z-index: 6660;
   height: var(--header-height);
+  
+  // Glassmorphism styles
+  background: rgba(255, 255, 255, 0.6); // Semi-transparent background
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); // For Safari
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }

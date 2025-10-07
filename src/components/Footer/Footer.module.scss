@@ -5,3 +5,23 @@
   padding-bottom: 40px;
   max-width: 1400px;
 }
+
+// New styles for your custom footer
+.main-credit {
+  font-size: 1.1rem; // Larger font size
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+
+  a {
+    color: white; // White color for the link
+  }
+}
+
+.attribution {
+  font-size: 0.75rem;
+  color: #a3a8ad; // Low contrast color
+
+  a {
+    color: #a3a8ad; // Same color for the link
+  }
+}

@@ -148,7 +148,7 @@ function DataLoader({
     {
       id: 'project',
       name: 'Open your project',
-      message: 'Load a .rawgraphs project.',
+      message: 'Load a .graphon project.', // <-- MODIFIED THIS LINE
       loader: (
         <LoadProject
           onProjectSelected={hydrateFromProject}
@@ -192,13 +192,6 @@ function DataLoader({
         {selectedOption.loader}
         <p className="mt-3">
           {selectedOption.message}
-          {/*<a
-            href="https://rawgraphs.io/learning"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Check out our guides
-          </a>*/}
         </p>
       </>
     )
@@ -252,7 +245,7 @@ function DataLoader({
 
   return (
     <>
-      <Row>
+      <Row className="content-glass"> {/* Added glassmorphism class */}
         {!userData && (
           <Col
             xs={3}
